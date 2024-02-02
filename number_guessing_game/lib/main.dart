@@ -1,3 +1,6 @@
+// code by J_P_Sathavara
+// contact me \\thekeen003@gmail.com
+
 import 'package:flutter/material.dart';
 import 'dart:math';
 
@@ -12,8 +15,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Number Guessing Game',
+      debugShowCheckedModeBanner: false,
       home: const GameScreen(),
     );
+
   }
 }
 
@@ -60,6 +65,7 @@ class _GameScreenState extends State<GameScreen> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Number Guessing Game'),
